@@ -1,7 +1,5 @@
-is_palindrome = lambda phrase: phrase.lower() == phrase.lower()[::-1]
+is_palindrome = lambda phrase: print(["No es Palíndromo", "Es Palíndromo"][phrase.lower() == phrase.lower()[::-1]])
 
-print("Ingrese la frase a validar: ", end="")
+phrase = input("Ingrese la frase a validar: ")
 
-phrase = input()
-
-print(is_palindrome(phrase))
+is_palindrome(phrase)
