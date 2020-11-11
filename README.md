@@ -1,2 +1,4 @@
-# FEC_py_study_group_exercises
-Ejercicios Python Grupo de Estudio FECs
+# FEC Ejercicios Python
+
+1º Detectar si un string es Palíndromo
+2º Detectar si un string contiene cadenas genéticas de ARN (In Progress)
