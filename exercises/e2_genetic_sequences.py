@@ -1,6 +1,4 @@
-"""
-contar_secuencias_geneticas = lambda secuencias: "Secuencias detectadas: {0}".format(len([seq for seq in secuencias.split("AUG") if seq[-3:] in ["UAA", "UAG", "UGA"]]))
-"""
+#contar_secuencias_geneticas = lambda secuencias: "Secuencias detectadas: {0}".format(len([seq for seq in secuencias.split("AUG") if seq[-3:] in ["UAA", "UAG", "UGA"]]))
 
 def contar_secuencias_geneticas(secuencias):
 	#Cantidad Secuencias Genéticas:
@@ -29,8 +27,6 @@ def contar_secuencias_geneticas(secuencias):
 	
 	data_frame.to_excel("Secuencias.xlsx") #Crea el excel Secuencias.xlsx en el mismo directorio
 
-
-
 contar_secuencias_geneticas("AUGGGGUACUACUAUAGGUAGAUGUGAAUGUGAAUGUGA")
 
 contar_secuencias_geneticas("AUGUGA")
@@ -40,4 +36,3 @@ contar_secuencias_geneticas("AUGGGGUaUxAXUA-AGGUaG")
 contar_secuencias_geneticas("AUGGGGUAUUAUUAUAGGUAGAUGGGGUAUUAUUAUAGGUAGAUGGGGUAUUAUUAUAGGUAG")
 
 contar_secuencias_geneticas("AUGUAAAUGUAGAUGUGAAUGUGAAUGUGAAUGUAG")
-
