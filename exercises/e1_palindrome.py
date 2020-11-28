@@ -1,12 +1,7 @@
-'''
-Formato Función:
+#palindromo = lambda sentencia: print(sentencia.lower().replace(" ", "") == sentencia.lower().replace(" ", "")[::-1])
 
 def palindromo(sentencia):
   print(sentencia.lower().replace(" ", "") == sentencia.lower().replace(" ", "")[::-1])
-'''
-
-
-palindromo = lambda sentencia: print(sentencia.lower().replace(" ", "") == sentencia.lower().replace(" ", "")[::-1])
 
 sentencia = input("Ingrese la frase a validar: ")
 
