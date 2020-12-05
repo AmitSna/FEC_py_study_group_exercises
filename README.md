@@ -9,3 +9,7 @@
 4º Imprimir números separados por salto de línea
 
 5º Generar intersección de conjuntos numéricos
+
+6ª Modelar clase de operaciones matemáticas
+
+7ª Modelar clase de funciones matemáticas
