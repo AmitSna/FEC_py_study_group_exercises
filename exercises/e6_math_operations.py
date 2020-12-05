@@ -31,7 +31,7 @@ class OperacionMatematica:
 	
 	def root(self, a, b):
 		"""Root of a number"""
-		return a * (1 / b)
+		return a ** (1 / b)
 
 
 #Tests
@@ -44,4 +44,4 @@ print(operator.divide(2, 2)) #1.0
 print(operator.int_divide(4, 2)) #2
 print(operator.modulo(3, 2)) #1
 print(operator.power(2, 1)) #2
-print(operator.root(144, 12)) #12.0
+print(operator.root(144, 2)) #12.0
