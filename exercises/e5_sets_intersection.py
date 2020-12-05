@@ -1,4 +1,4 @@
-#sets_intersection = lambda a, b: [num for num in sorted(list(set(a))) if num in sorted(b)]
+#sets_intersection = lambda a, b: sorted(set(a).intersection(set(b)))
 
 def sets_intersection(a, b):
 	return [num for num in sorted(set(a)) if num in b]
