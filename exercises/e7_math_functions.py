@@ -3,10 +3,13 @@ class FuncionesMatematicas:
 
 	def average(self, a, b):
 		"""Average between two numbers"""
+		
 		return (a + b) / 2
 	
 	def max(self, a):
 		"""Max value from list"""
+		#return max(a)
+		
 		if a:
 			max = a[0]
 			for num in a:
@@ -18,6 +21,8 @@ class FuncionesMatematicas:
 	
 	def min(self, a):
 		"""Min value from list"""
+		#return min(a)
+		
 		if a:
 			min = a[0]
 			for num in a:
@@ -29,20 +34,21 @@ class FuncionesMatematicas:
 	
 	def repeated(self, a):
 		"""Show repeated values in list"""
+		
 		return sorted(set([num for num in a if a.count(num) > 1]))
 	
 	def unique(self, a):
 		"""Show unique values in list"""
+		
 		return sorted(set([num for num in a if a.count(num) == 1]))
 	
 	def fibo(self, a):
 		"""Calculate Fibonacci Sucession from a given quantity of digits"""
-		if a == 0:
+		#return [int((((1 + (5 ** 0.5)) / 2) ** a / (5 ** 0.5)) + 0.5), a][a < 2]
+		
+		if a < 2:
 			return 0
-		elif a == 1:
-			return 1
-		else:
-			return self.fibo(a - 1) + self.fibo(a - 2)
+		return self.fibo(a - 1) + self.fibo(a - 2)
 			
 #Tests
 
@@ -53,4 +59,4 @@ print(function.max([1, 2, 3])) #3
 print(function.min([3, 1, 2])) #1
 print(function.repeated([1, 1, 1])) #[1]
 print(function.unique([1, 1, 1])) #[]
-print(function.fibo(7))
+print(function.fibo(7)) #13
