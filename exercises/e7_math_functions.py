@@ -31,6 +31,15 @@ class FuncionesMatematicas:
 			return min
 		else:
 			return a
+			
+	def sum(self, a):
+		"""Return sum from nums in list"""
+		#sum(a)
+		
+		sum = 0
+		for num in a:
+			sum += num
+		return sum
 	
 	def repeated(self, a):
 		"""Show repeated values in list"""
@@ -47,7 +56,7 @@ class FuncionesMatematicas:
 		#return [int((((1 + (5 ** 0.5)) / 2) ** a / (5 ** 0.5)) + 0.5), a][a < 2]
 		
 		if a < 2:
-			return 0
+			return a
 		return self.fibo(a - 1) + self.fibo(a - 2)
 			
 #Tests
@@ -57,6 +66,7 @@ function = FuncionesMatematicas()
 print(function.average(3, 1)) #2.0
 print(function.max([1, 2, 3])) #3
 print(function.min([3, 1, 2])) #1
+print(function.sum([1, 2, -1])) #2
 print(function.repeated([1, 1, 1])) #[1]
 print(function.unique([1, 1, 1])) #[]
 print(function.fibo(7)) #13
