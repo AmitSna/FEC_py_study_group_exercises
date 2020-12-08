@@ -1,12 +1,18 @@
 class FuncionesMatematicas:
 	"""Math Functions Class"""
 
-	def average(self, a, b):
-		"""Average between two numbers"""
+	def average(self, a):
+		"""Average from list"""
 		
-		return (a + b) / 2
+		if a:
+			sum = 0
+			for num in a:
+				sum += num
+			return 0 if sum == 0 else sum / 2
+		else:
+			return a
 	
-	def max(self, a):
+	def maximum(self, a):
 		"""Max value from list"""
 		#return max(a)
 		
@@ -19,7 +25,7 @@ class FuncionesMatematicas:
 		else:
 			return a
 	
-	def min(self, a):
+	def minimum(self, a):
 		"""Min value from list"""
 		#return min(a)
 		
@@ -32,7 +38,7 @@ class FuncionesMatematicas:
 		else:
 			return a
 			
-	def sum(self, a):
+	def summation(self, a):
 		"""Return sum from nums in list"""
 		#sum(a)
 		
@@ -63,10 +69,10 @@ class FuncionesMatematicas:
 
 function = FuncionesMatematicas()
 
-print(function.average(3, 1)) #2.0
-print(function.max([1, 2, 3])) #3
-print(function.min([3, 1, 2])) #1
-print(function.sum([1, 2, -1])) #2
+print(function.average([0])) #0
+print(function.maximum([1, 2, 3])) #3
+print(function.minimum([3, 1, 2])) #1
+print(function.summation([1, 2, -1])) #2
 print(function.repeated([1, 1, 1])) #[1]
 print(function.unique([1, 1, 1])) #[]
 print(function.fibo(7)) #13
