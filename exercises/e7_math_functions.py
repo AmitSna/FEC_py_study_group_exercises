@@ -8,7 +8,7 @@ class FuncionesMatematicas:
 			sum = 0
 			for num in a:
 				sum += num
-			return 0 if sum == 0 else sum / 2
+			return 0 if sum == 0 else sum / len(a)
 		else:
 			return a
 	
@@ -69,7 +69,7 @@ class FuncionesMatematicas:
 
 function = FuncionesMatematicas()
 
-print(function.average([0])) #0
+print(function.average([3, 2, 1])) #2.0
 print(function.maximum([1, 2, 3])) #3
 print(function.minimum([3, 1, 2])) #1
 print(function.summation([1, 2, -1])) #2
