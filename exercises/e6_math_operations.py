@@ -15,11 +15,11 @@ class OperacionMatematica:
 	
 	def divide(self, a, b=1):
 		"""Divides two numbers"""
-		return a / b
+		return "Can't divide by zero" if b == 0 else a / b
 	
 	def int_divide(self, a, b=1):
 		"""Divides two numbers by integer part"""
-		return a // b
+		return "Can't divide by zero" if b == 0 else a // b
 	
 	def modulo(self, a, b):
 		"""Modulo of two numbers"""
