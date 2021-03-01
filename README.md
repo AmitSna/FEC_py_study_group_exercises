@@ -10,6 +10,6 @@
 
 5º Generar intersección de conjuntos numéricos
 
-6ª Modelar clase de operaciones matemáticas
+6º Modelar clase de operaciones matemáticas
 
-7ª Modelar clase de funciones matemáticas
+7º Modelar clase de funciones matemáticas
